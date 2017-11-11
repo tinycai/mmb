@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.list_break {
+  width: 100%;
+  margin-top: 0.2rem;
+  position: relative;
+}
+.list_break .breadcrumb {
+  padding-top: 0.04rem;
+  margin-bottom: 0;
+}
+.list_break button {
+  position: absolute;
+  right: 0.56rem;
+  top: -0.14rem;
+}
+.bi_title {
+  height: 10rem;
+  text-align: center;
+  padding-top: 0.4rem;
+  magin-bottom: 4rem;
+  background-color: #fff;
+  position: relative;
+}
+.bi_title img {
+  width: 4rem;
+  height: 4rem;
+  diplay: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 1rem;
+}
+.bi_chose {
+  width: 100%;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.bi_chose a {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  border-right: 1px solid red;
+  background-color: #ff9000;
+}
+.bi_chose a:first-child {
+  background-color: #ffbb00;
+}
+.bi_jd {
+  height: 1.2rem;
+  padding: 0.2rem;
+}
+.bi_jd .jd_left {
+  float: left;
+}
+.bi_jd .jd_left .jd_name {
+  font-size: 0.5rem;
+  padding-left: 1rem;
+  line-height: 1.1rem;
+}
+.bi_jd .jd_right {
+  float: right;
+}
+.bi_jd .jd_right .red {
+  color: red;
+  line-height: 1.1rem;
+  font-size: 0.44rem;
+  margin-right: 0.4rem;
+}
+.bi_jd .jd_right .btn-default {
+  background-color: orangered;
+  color: #fff;
+  padding: 4px 12px;
+  margin-bottom: 0.1rem;
+}
+.note {
+  font-size: 0.24rem;
+  color: #888;
+  padding: 0.16rem 0.2rem;
+  line-height: 0.36rem;
+}
+.bi_comment {
+  width: 100%;
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  background-color: #ccc;
+  border-top: 2px solid #262626;
+  margin-top: 0.4rem;
+}
+.bi_comment p {
+  color: #000;
+}
+.bi_long {
+  width: 100%;
+  padding: 0.4rem;
+}
+.bi_long li {
+  padding: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+.bi_long .long-left {
+  float: left;
+}
+.bi_long .long-right {
+  float: right;
+}
+.bi_long .long-right-buy {
+  margin-top: 0.1rem;
+  float: right;
+}
+.bi_long .article {
+  margin-top: 0.6rem;
+}
+.bi_more {
+  width: 100%;
+  display: block;
+}

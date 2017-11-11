@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>白菜价-淘宝内部券</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="javascript:history.go(-1);">
+        <span class="glyphicon glyphicon-chevron-left left"></span>
+      </a>
+    </div>
+    <h3 class="title">
+      白菜价-淘宝内部券
+    </h3>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  <div class="content">
+  
+    <!--导航栏开始-->
+    <div class="bai_nav">
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+          <ul class="clearfix bai_nav_ul mui-scroll ">
+            <!--待填-->
+          </ul>
+      </div>
+      <span class="mui-icon mui-icon-search"></span>
+    </div>
+    
+    
+    <!--商品内容开始-->
+    <div class="bai_content clearfix">
+      <ul class="clearfix">
+      
+      </ul>
+      <!--待填-->
+    </div>
+  
+    
+    
+  </div>
+    
+    
+    
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+
+</div>
+
+<!--ul标签中的内容渲染-->
+<script type="text/html" id="tml">
+  {{each result v i}}
+  
+  <li class={{i==0?"now":""}} ><a href="#" data-id="{{v.titleId}}"><span>{{v.title}}</span></a></li>
+ 
+  {{/each}}
+</script>
+
+<!--商品详情渲染-->
+<script type="text/html" id="tml2">
+{{each result v i}}
+<li class="clearfix">
+  <div class="con_img ">
+    {{@v.productImg}}
+  </div>
+  
+  <div class="con_info">
+    <div class="con_t">
+      {{@v.productName}}
+    </div>
+  
+    <div class="con_p">
+      {{@v.productPrice}}
+    </div>
+  
+    {{@v.productCouponRemain}}
+    {{@v.productCoupon}}
+  </div>
+ 
+  <button class="btn btn-danger pull-right">下单链接</button>
+</li>
+
+{{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src=lib/bootstrap/js/bootstrap.min.js></script>
+<script src="js/common.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

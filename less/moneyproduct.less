@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import "base";
+@import "change";
+.left{
+  color:#fff;
+  font-size:16rem/50;
+}
+.title{
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  text-align:center;
+  left:50%;
+  top:9rem/50;
+  transform:translate(-50%);
+  color:#fff;
+}
+
+.content{
+  background-color: #fff;
+}
+
+
+
+//商品详情开始
+.pro_detail{
+  padding:10rem/50;
+  background-color: #fff;
+  position:relative;
+  .new{
+    font-weight:700;
+    margin-bottom:10rem/50;
+    color:#5a5a5a;
+  }
+  .small_pic{
+    width:200rem/50;
+    height:200rem/50;
+    float:right;
+    margin-right:50rem/50;
+      img{
+        width: 100%;
+        height: 100%;
+        display:block;
+      }
+  }
+  .big_pic{
+    width:400rem/50;
+    height:400rem/50;
+    margin-top:130rem/50;
+    margin-left:75rem/50;
+    margin-bottom:250rem/50;
+  }
+}
+.detail_sub p{
+  margin-top:20rem/50;
+  margin-bottom:20rem/50;
+}
+
+.detail_btm{
+  position:relative;
+  margin-bottom:20rem/50;
+  p{
+    font-size:24rem/50;
+    line-height:40rem/50;
+    color:#606060;
+    work-break:break-all;
+    margin:6px auto;
+  }
+}
+
+.addr{
+  margin-left:33.33%;
+  width: 138rem/50;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: #f1f1f1 #f1f1f1 #dbdbdb #f1f1f1;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  li{
+    width: 100%;
+    padding:0 10rem/50;
+  }
+  li:hover{
+    background-color: indianred;
+  }
+  span{
+    font-size:14rem/50;
+    border-bottom:1px dotted #c0c0c0;
+    display: block;
+    padding: 0px 10px;
+    text-align: left;
+    display:block;
+  }
+  strong{
+    color:@mmb_color;
+    padding-left:25rem/50;
+  }
+}
+
+
+
+//前往购买
+.buy{
+  margin-top:20rem/50;
+  padding:20rem/50;
+  background-color: #fff;
+  a{
+    width: 100%;
+    color:#fff;
+  }
+
+}
+
+//二维码开始
+.code{
+  padding:10rem/50;
+}
+
+//发表评论开始
+.tit{
+  margin-top:20rem/50;
+  font-size:18rem/50;
+}
+
+.form{
+  padding:10rem/50;
+  position:relative;
+  textarea{
+    border:1px solid #ccc;
+    resize: none;
+    cols:30;
+    rows:10;
+  }
+  input{
+    color:#fff;
+    position:absolute;
+    right:10rem/50;
+    bottom:15rem/50;
+    background-color:orangered;
+    border:1px solid transparent;
+  }
+}
+
+
+
+//评论区域
+
+cu-content-pl .tit {
+  font-size: 16px;
+  padding: 6px 8px;
+}
+.cu-content-pl .list ul li {
+  padding: 18px 10px;
+  background-color: #FFFFFF;
+}
+.userimg{
+  width:42rem/50;
+  height:42rem/50;
+  background-position: top;
+  border-radius: 20rem/50;
+  float:left;
+  overflow: hidden;
+  margin-right:30rem/50;
+  img {
+    width: 40rem/50;
+    background-position: top;
+    border-radius: 20rem/50;
+    height: 40rem/50;
+  }
+}
+.con{
+  overflow: hidden;
+  .name{
+    margin-bottom:20rem/50;
+  }
+  .username{
+    color: #5997c0;
+    font-size: 13px !important;
+    float: left;
+  }
+  .time{
+    float:right;
+    color:#999999;
+    font-size: 13px !important;
+  }
+  .content{
+    color:#606060;
+  }
+}

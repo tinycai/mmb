@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.list_break {
+  width: 100%;
+  margin-top: 0.2rem;
+  position: relative;
+}
+.list_break .breadcrumb {
+  padding-top: 0.04rem;
+  margin-bottom: 0;
+}
+.list_break button {
+  position: absolute;
+  right: 0.56rem;
+  top: -0.14rem;
+}
+.list_content li .mui-media-object {
+  max-width: 2rem;
+  height: 2rem;
+}
+.list_content li .red {
+  color: #ff9000;
+  font-weight: 700;
+  font-size: 0.32rem;
+  margin-top: 0.7rem;
+  padding-bottom: 0.2rem;
+}
+.list_buttons {
+  padding-top: 0.2rem;
+}
+.list_buttons a {
+  margin-left: 0.4rem;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+.list_buttons .btn-group > .btn:first-child {
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+}

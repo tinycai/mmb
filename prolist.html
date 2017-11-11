@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>排名</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/prolist.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  
+  <!--搜索框开始-->
+  <div class="mmb_search clearfix">
+    <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+    <button class="search_btn">搜索</button>
+  </div>
+  
+  <!--面包屑开始-->
+  <div class="brake">
+    <ul>
+      <li><a href="index.html">首页></a></li>
+      <li><a href="category.html">全部分类</a></li>
+    </ul>
+  </div>
+  
+  
+  <div class="content">
+  
+    <!--热门品牌开始-->
+    <div class="hot">
+      <p class="top">平板电视产品销量排行</p>
+    </div>
+  
+    <!--下拉列表开始-->
+    <div class="box hide">
+      <ul class="new_ul">
+        <!--待填-->
+      </ul>
+    </div>
+  
+  
+    <!--热门评论-->
+    <div class="hot">
+      <p class="coment">平板电视最新评论</p>
+    </div>
+  
+    
+    
+    <div class="sec_box hide">
+      <ul class="sec_ul">
+        <li>
+          <img src="images/03.jpg" alt="">
+          <p class="title_sec">乐视TV乐视TV乐视TV乐视TV乐视TV乐视TV乐视TV</p>
+          <span class="sj">▲</span>
+          
+          
+          <div class="sec_info">
+      
+            <span class="username">g***n</span>
+            <span class="star_s">★★★★★</span>
+            <p class="article">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+          </div>
+  
+        </li>
+      </ul>
+    </div>
+    
+    
+  </div>
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<!--标题的渲染-->
+<script type="text/html" id="tml">
+{{each result v i}}
+<li>
+  <a href="bijia.html?productid={{v.productId}}">
+   {{@v.productImg}}
+    
+    <div class="info" data-productid="{{v.productId}}">
+      <p class="title">{{v.productName}}</p>
+      <p class="second_row">
+        <span class="price">{{v.productPrice}}</span>
+        <span class="star">★★★★★</span>
+      </p>
+      <p>
+        <span class="bao">{{v.productQuote}}</span>
+        <span class="pin">{{v.productCom}}</span>
+      </p>
+    </div>
+  
+  </a>
+</li>
+  {{/each}}
+
+</script>
+
+
+<!--评论渲染-->
+<script type="text/html" id="tml2">
+  {{each result v i}}
+  <li>
+    {{@v.productImg}}
+    <p class="title_sec">乐视TV乐视TV乐视TV乐视TV乐视TV乐视TV乐视TV</p>
+    <span class="sj">▲</span>
+    <div class="sec_info">
+    
+      <p>
+        <span class="username">{{v.comName}}</span>
+        <span class="star_s">★★★★★</span>
+        <span class="date">{{v.comTime}}</span>
+      </p>
+      
+     
+      <p class="article">{{v.comContent}}</p>
+    </div>
+
+  </li>
+  {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/prolist.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+@import "adapter";
+@import "base";
+@import "common";
+
+
+ul,li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+.content {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+.mmb_header{
+  background-color: @mmb_color;
+}
+.left{
+  color:#fff;
+  font-size:16rem/50;
+}
+.title{
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  text-align:center;
+  left:50%;
+  top:9rem/50;
+  transform:translate(-50%);
+  color:#fff;
+  font-size:24rem/50;
+}
+
+
+//商品导航开始
+.cd_nav{
+  width: 100%;
+  max-width:750px;
+  min-width:320px;
+  height:50rem/50;
+  background-color: #fff;
+  position:absolute;
+  padding:10rem/50;
+
+  .first>li{
+    width:33.33%;
+    float:left;
+    text-align:center;
+    font-size:18rem/50;
+  }
+
+  //二级菜单开始
+  .cd_nav_box{
+    z-index:999;
+    width: 100%;
+    border-top:1px solid #ccc;
+    position:absolute;
+    top:50rem/50;
+    left:0;
+    overflow: hidden;
+    background-color: #fff;
+
+    li{
+      width: 2000%;
+      height:50rem/50;
+      border-bottom:1px solid #ccc;
+      padding:10rem/50;
+      position:relative;
+      span{
+        color:@mmb_color;
+        position:absolute;
+        font-size: 20rem/50;
+        top:9rem/50;
+        left:590rem/50;
+        &.true{
+          display:none;
+        }
+      }
+      p{
+        color:#333;
+        text-align:left;
+        vertical-align: middle;
+        font-size:16rem/50;
+      }
+    }
+  }
+  .hide{
+    display:none;
+  }
+}
+
+//商品内容开始
+.cd_content{
+  width: 100%;
+  padding:10rem/50;
+  background-color: #fff;
+  overflow: hidden;
+  padding-top:50rem/50;
+  li{
+    width: 48%;
+    float:left;
+    height:320rem/50;
+    border:1px solid #ccc;
+    paddng:10rem/50;
+    img{
+      width:200rem/50;
+      height:200rem/50;
+      display:block;
+      margin:10rem/50 auto;
+    }
+    p{
+      color:#333;
+      margin-top:20rem/50;
+      margin-bottom:10rem/50;
+      font-size:18rem/50;
+      margin-bottom:0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    span{
+      color:@mmb_color;
+      font-weight:700;
+      font-size:20rem/50;
+    }
+    .btn{
+      margin-bottom:10rem/50;
+      margin-right:10rem/50;
+      float:right;
+    }
+  }
+
+
+}

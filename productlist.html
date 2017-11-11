@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>慢慢买-商品详情页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  
+  <!--搜索框开始-->
+  <div class="mmb_search clearfix">
+    <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+    <button class="search_btn">搜索</button>
+  </div>
+  
+  <!--面包屑-->
+  <div class="list_break">
+    <ol class="breadcrumb clearfix">
+      <!--待填-->
+    </ol>
+  
+    <button type="button" class="btn btn-default">筛选</button>
+  </div>
+  
+  <!--商品内容开始-->
+  
+  <div class="list_content">
+    <ul class="mui-table-view">
+      <!--待填-->
+    </ul>
+  </div>
+  
+  
+  <!--按钮分页开始-->
+  <div class="list_buttons">
+    <!--待填-->
+  </div>
+  
+  
+  
+  
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  
+</div>
+
+<!--面包屑渲染-->
+<script type="text/html" id="tml">
+  {{each result v i}}
+  <li><a href="index.html">首页</a></li>
+  <li><a href="category.html">全部分类</a></li>
+  <li class="active">{{v.category}}</li>
+  {{/each}}
+</script>
+
+<!--商品详情渲染-->
+<script type="text/html" id="tml2">
+  {{each result v i}}
+  <li class="mui-table-view-cell mui-media">
+    <a href="bijia.html?productid={{v.productId}}&categoryid={{v.categoryId}}" class="pro_info">
+      <img class="mui-media-object mui-pull-left" src="{{v.src}}">
+      <div class="mui-media-body">
+        {{v.productName}}
+        <p class="red">{{v.productPrice}}</p>
+        <p class="mui-ellipsis">
+          <span>{{v.productQuote}}</span>
+          <span>{{v.productCom}}</span>
+        </p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+  
+</script>
+
+
+<!--分页跳转渲染-->
+<script type="text/html" id="tml3">
+
+  {{ if pageid==0}}
+  <a href="productlist.html?categoryid=0&pageid=1" ><span class="btn btn-default" >上一页</span></a>
+  {{else}}
+  <a href="productlist.html?categoryid=0&pageid=<%=pageid-1%>" ><span class="btn btn-default" >上一页</span></a>
+  {{/if}}
+  
+  <div class="btn-group" >
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{pageid}}/{{page}}<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      
+      <%
+        for(var j=1;j<=page;j++){
+      %>
+      <li><a href="productlist.html?categoryid=0&pageid=<%=j%>" class="num"><%=j%>/{{page}}</a></li>
+      <%}%>
+     
+    </ul>
+  </div>
+  
+
+  <a href="productlist.html?categoryid=0&pageid=<%=pageid*1+1%>" ><span class="btn btn-default">下一页</span></a>
+  
+ 
+</script>
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src=lib/bootstrap/js/bootstrap.min.js></script>
+<script src="js/common.js"></script>
+<script src="js/productlist.js"></script>
+</body>
+</html>

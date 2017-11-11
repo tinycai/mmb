@@ -1,0 +1,10 @@
+$(function(){
+  $.ajax({
+    type:"get",
+    url:"http://localhost:9090/api/getcoupon",
+    success:function(data){
+      console.log(data);
+      $(".quan_ul").html(template("tml",data));
+    }
+  })
+})

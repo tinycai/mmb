@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>比价分页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  
+  <!--搜索框开始-->
+  <div class="mmb_search clearfix">
+    <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+    <button class="search_btn">搜索</button>
+  </div>
+  
+  
+  <!--面包屑-->
+  <div class="list_break">
+    <ol class="breadcrumb clearfix">
+      <!--待填-->
+    </ol>
+    
+    <button type="button" class="btn btn-default">筛选</button>
+  </div>
+  
+  
+  <!--内容开始-->
+  <div class="mmb_content">
+  
+    <!--商品窗口-->
+    <div class="bi_title">
+     <!--待填-->
+    </div>
+    
+    <!--选择区域-->
+    <div class="bi_chose clearfix">
+      <a href="#">比价购买</a>
+      <a href="#">产品参数</a>
+      <a href="#">评价(2222)</a>
+    </div>
+  
+    <!--京东商城-->
+    <div class="bi_jd clearfix">
+      <div class="jd_left">
+        <img src="" alt="">
+        <span class="jd_name">京东商城</span>
+      </div>
+      <div class="jd_right">
+        <span class="red">&yen;222</span>
+        <button class="btn btn-default">去购买</button>
+      </div>
+    </div>
+    
+    <!--注释-->
+    <div class="note">
+      * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+    
+    <!--网友评价-->
+    <div class="bi_comment">
+      <p>网友评价</p>
+    </div>
+    
+    <!--评价内容-->
+    <div class="bi_long">
+      <ul class="long_com">
+        <!--待填-->
+      </ul>
+      <!--更多评价-->
+  
+      <a href="#" class="btn btn-default bi_more">查看更多评价</a>
+
+    </div>
+  
+    
+  </div>
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+  
+  
+
+</div>
+
+
+<!--面包屑渲染-->
+<script type="text/html" id="tml">
+  {{each result v i}}
+  <li><a href="index.html">首页</a></li>
+  <li><a href="category.html">{{v.category}}</a></li>
+  <li class="active">乐视</li>
+  {{/each}}
+</script>
+
+<!--图片展示渲染-->
+<script type="text/html" id="tml2">
+  {{each result v i}}
+  <h4>{{v.productName}}</h4>
+  <!--<img src="images/03.jpg" alt="">-->
+  {{@v.productImg}}
+  {{/each}}
+</script>
+
+<!--评论标题开始-->
+<script type="text/html" id="tml3">
+{{each result v i}}
+<li class="clearfix">
+  <div class="long-top clearfix">
+    <span class="long-left">{{v.comName}}</span>
+    <span class=long-right>{{v.comTime}}</span>
+  </div>
+  
+  
+  <span class="long-right-buy">{{v.comFrom}}</span>
+  <div class="article">
+    {{v.comContent}}
+  </div>
+</li>
+{{/each}}
+
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src=lib/bootstrap/js/bootstrap.min.js></script>
+<script src="js/common.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

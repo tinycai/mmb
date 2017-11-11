@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>品牌</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="#">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  
+  <!--搜索框开始-->
+  <div class="mmb_search clearfix">
+    <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+    <button class="search_btn">搜索</button>
+  </div>
+  
+  <!--面包屑开始-->
+  <div class="brake">
+    <ul>
+      <li><a href="index.html">首页></a></li>
+      <li><a href="category.html">全部分类</a></li>
+    </ul>
+  </div>
+  
+  <!--热门品牌开始-->
+  <div class="brand">
+    <ul class="clearfix all_ul">
+      <li class="hot">
+        <p>平板电视哪个牌子好</p>
+      </li>
+      <div class="list hide">
+        <ul class="list_ul clearfix">
+          <!--待填-->
+        </ul>
+      </div>
+      
+      <!--内含有拼接的字符串-->
+      <li class="hot second_li">
+        <!--隐藏的a连接-->
+      </li>
+  
+      <li class="hot second_li">
+        <p>平板电视最新评论</p>
+      </li>
+    
+    </ul>
+  
+  </div>
+  
+  <!--下拉列表开始-->
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+<!--标题的渲染-->
+<script type="text/html" id="tml">
+  
+ 
+        {{each result v i}}
+        <li>
+          <a href="productlist.html?categoryid=0&pageid=1">
+            <span class="cube {{i==0?'red':i==1?'yellow':i==2?'blue':''}}">{{i+1}}</span>
+            <span class="title">{{v.brandName}}</span>
+            <span class="arrow">︾</span>
+            <p class="sub_title">{{v.brandInfo}}</p>
+          </a>
+        </li>
+        {{/each}}
+ 
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

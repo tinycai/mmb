@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import "adapter";
+@import "base";
+@import "common";
+
+
+ul,li{
+  list-style:none;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.mmb_header{
+  background-color: #f4483e;
+}
+.left{
+  color:#fff;
+  font-size:16rem/50;
+}
+.title{
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  text-align:center;
+  left:50%;
+  top:9rem/50;
+  transform:translate(-50%);
+  color:#fff;
+  font-size:24rem/50;
+}
+
+//内容开始
+.warning{
+  font-size:12px;
+  text-align:center;
+  color:#999;
+  margin:8px 0px;
+}
+
+.info{
+  margin-top:10rem/50;
+  padding:10rem/50;
+  border-bottom:1px solid #ccc;
+  li{
+    img{
+      width:150rem/50;
+      height:150rem/50;
+      display:block;
+      float:left;
+      margin-right:20rem/50;
+    }
+    .de-info{
+      overflow:hidden;
+      margin-left:20rem/50;
+      postion:relative;
+      .hui{
+        color:#333;
+        margin-top:10rem/50;
+        font-size:20rem/50;
+      }
+      .price{
+        font-weight:700;
+        color:black;
+        margin-top:20rem/50;
+        font-size:20rem/50;
+      }
+      .date{
+        color:@mmb_color;
+        margin-top:10rem/50;
+        font-size:20rem/50;
+      }
+      .mui-icon{
+        color:#ccc;
+        position:absolute;
+        right:10rem/50;
+        top:160rem/50;
+
+
+      }
+    }
+  }
+}
+
+//遮罩层开始
+.mask{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  z-index:999;
+  display:none;
+  .box{
+    position:absolute;
+    top:178rem/50;
+    left:50%;
+    transform:translateX(-50%);
+    border: 1px solid #000;
+    width: 200rem/50;
+    height:200rem/50;
+    position:relative;
+    overflow: hidden;
+    //transition:all 2s;
+
+    ul{
+      width: 30000px;
+      height:200rem/50;
+      position:absolute;
+      transform:translateX(-200px);
+      top:0;
+      left:0;
+      li{
+        width:200rem/50;
+        height:200rem/50;
+        float:left;
+        img{
+          width: 100%;
+          height: 100%;
+          margin:0 auto;
+        }
+      }
+    }
+  }
+
+  .mui-icon-arrowleft,.mui-icon-arrowright{
+    font-size:30rem/50;
+    color:@mmb_color;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .mui-icon-arrowleft{
+    left:50rem/50;
+  }
+  .mui-icon-arrowright{
+    right:50rem/50;
+  }
+}

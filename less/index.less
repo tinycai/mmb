@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+
+@import "common";
+
+
+//导航栏开始
+.mmb_nav{
+  margin-top:10rem/50;
+  background-color: #fff;
+  padding:10rem/50;
+  li{
+    width:25%;
+    text-align:center;
+    float:left;
+    padding-bottom:10rem/50;
+    //display:block;
+    img{
+      width: 60rem/50;
+      height:60rem/50;
+      display:block;
+      margin:0 auto;
+    }
+  }
+  li.hide{
+    display:none;
+  }
+}
+
+//商品展示开始
+.mmb_pro_title{
+  width: 100%;
+  margin-top:10rem/50;
+  background-color: @mmb_color;
+  padding: 10rem/50;
+  h4{
+    color:#fff;
+    float:left;
+    font-size:18rem/50;
+    font-weight:400;
+  }
+  span{
+    float:right;
+    color:#fff;
+  }
+}
+
+//商品内容开始
+.mmb_pro_content{
+  width: 100%;
+  padding:20rem/50;
+  background-color: #fff;
+
+  li{
+    height:200rem/50;
+    border-bottom:1px solid #ccc;
+    padding-top:20rem/50;
+  }
+
+  img{
+    width:120rem/50;
+    height:120rem/50;
+    float:left;
+    margin-right:30rem/50;
+  }
+  .pro_content{
+    overflow: hidden;
+    .red{
+      color:@mmb_color;
+    }
+    .pro_content_bottom{
+      margin-top:70rem/50;
+      .mui-icon-chat {
+          font-size:14rem/50;
+          float:right;
+          margin-right:20rem/50;
+          text-align:center;
+          vertical-align: middle;
+          display:inline-block;
+          height:14px;
+          line-height:14px;
+
+      }
+    }
+  }
+
+}
+
+//更多优惠信息开始
+.mmb_more{
+  margin-top:10rem/50;
+  text-align:center;
+  padding:10rem/50;
+  width: 100%;
+  a{
+    text-align:center;
+    width: 100%;
+    border-radius: 5rem/50;
+    background-color: #fff;
+  }
+}
+
+
+

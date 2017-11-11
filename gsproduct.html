@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>凑单品</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="javascript:history.go(-1);">
+        <span class="glyphicon glyphicon-chevron-left left"></span>
+      </a>
+    </div>
+    <h3 class="title">
+      凑单品
+    </h3>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  <div class="content">
+    
+
+    <!--导航栏开始-->
+    <div class="cd_nav">
+      <ul class="first clearfix">
+        <li>
+          <span class="first-title">京东</span>
+          <span>▲</span>
+          <div class="cd_nav_box hide">
+            <ul class="clearfix first_jd">
+              <!--待填-->
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <span class="second-title">华北</span>
+          <span>▲</span>
+          <div class="cd_nav_box  hide">
+            <ul class="clearfix second_hb">
+              <!--待填-->
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <span>全部价格</span>
+          <span>▲</span>
+          <div class="cd_nav_box hide">
+            <ul class="clearfix">
+              <li>
+                <a href="#">
+                  <span>√</span>
+                  <p>100-200</p>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <!--商品内容开始-->
+    <div class="cd_content">
+      <ul class="clearfix cd_info">
+       <!--待填-->
+      </ul>
+    </div>
+    
+    
+  </div>
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+
+</div>
+
+<!--商品渲染-->
+<script type="text/html" id="tml">
+  {{each result v i}}
+  
+  <li>
+    <a href="#">
+      <img src={{v.productImg}} alt="">
+      <p>{{v.productName}}</p>
+      <span>{{v.productPrice}}</span>
+      <button class="btn btn-warning">去凑单</button>
+    </a>
+  </li>
+  
+  {{/each}}
+
+</script>
+
+<!--二级分类渲染  京东-->
+<script type="text/html" id="tml2">
+  {{each result v i}}
+
+  <li data-shopid="{{v.shopId}}">
+    <a href="#">
+      <span class="true gou">√</span>
+      <p class="shopName">{{v.shopName}}</p>
+    </a>
+  </li>
+  
+  {{/each}}
+</script>
+
+<!--二级分类渲染 华北-->
+<script type="text/html" id="tml3">
+{{each result v i}}
+<li data-areaid="{{v.areaId}}">
+  <a href="#">
+    <span class="true gou">√</span>
+    <p class="areaName">{{v.areaName}}</p>
+  </a>
+</li>
+{{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src=lib/bootstrap/js/bootstrap.min.js></script>
+<script src="js/common.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

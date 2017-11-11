@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/discount.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="javascript:history.go(-1);">
+        <span class="glyphicon glyphicon-chevron-left left"></span>
+      </a>
+    </div>
+    <h3 class="title">
+      国内折扣
+    </h3>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  <div class="content">
+    <!--商品详细内容-->
+    <div class="pro_detail clearfix">
+      <!--商品主标题-->
+      <div class="detial_title">
+        <h4 class="new">AVENT 新安怡 新生儿学习套装 SCD270/00</h4>
+      </div>
+      <!--商品副小题-->
+      <div class="detail_sub">
+        <p>
+          <span>中国亚马逊</span>
+          <span>10-24 12:36</span>
+          <span>拉风的哈哈 / 慢慢买</span>
+        </p>
+      </div>
+      
+      
+      
+      <div class="detail_btm clearfix">
+        <!--商品小图片-->
+        <img src="images/03.jpg" class="small_pic" alt="">
+        <p>海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+        <p></p>
+        <p>目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。</p>
+        <!--商品大图片-->
+        <img src="images/03.jpg" class="big_pic" alt="">
+        
+        <!--地址-->
+        <div class="addr">
+          <ul>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+            <li><span>北京</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">有货</span></li>
+          
+          </ul>
+        
+        </div>
+      
+      
+      </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    <!--前往购买-->
+    <div class="buy">
+      <a href="#" class="btn btn-warning">前往购买</a>
+    </div>
+    
+    <!--二维码 开始-->
+    <div class="code">
+      <img src="images/mmbweixin2.png" alt="">
+    </div>
+    
+    <!--发表评论-->
+    <h3 class="web">发表评论</h3>
+    <div class="box">
+      <textarea name="" id="textarea" cols="30" rows="10"> </textarea>
+      <a href="#" class="btn btn-warning">发表评论</a>
+    </div>
+    
+    <!--最新评论-->
+    <h3>最新评论</h3>
+    
+    <ul class="mui-table-view">
+      <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;" class="">
+          <img class="mui-media-object mui-pull-left" src="images/03.jpg">
+          <div class="mui-media-body">
+            <span>幸福</span>
+            <span class="date">2016/10/24 14:31:41</span>
+            <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  <!--底部开始-->
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+
+</div>
+
+
+<script type="text/html" id="tml">
+  {{each result v i}}
+  <!--商品详细内容-->
+  <div class="pro_detail clearfix">
+    <!--商品主标题-->
+    <div class="detial_title">
+      <h4 class="new">{{v.productName}}</h4>
+    </div>
+    <!--商品副小题-->
+    <div class="detail_sub">
+      <p>
+        <span>{{v.productName}}</span>
+        <span>{{v.productTime}}</span>
+        <span>{{v.productTips}}</span>
+      </p>
+    </div>
+    
+    
+    
+    <div class="detail_btm clearfix">
+      <!--商品小图片-->
+      <div class="small_pic">
+        {{@v.productImg}}
+      </div>
+      
+      <p>{{v.productInfo}}</p>
+      <p></p>
+      <p>{{v.productInfo1}}</p>
+      <!--商品大图片-->
+      <div class="big_pic">
+      {{@v.productImg}}
+      </div>
+      
+    </div>
+  </div>
+  
+  <!--前往购买-->
+  <div class="buy">
+    <a href="#" class="btn btn-warning">前往购买</a>
+  </div>
+  
+  <!--二维码 开始-->
+  <div class="code">
+    <img src="images/mmbweixin2.png" alt="">
+  </div>
+  
+  
+  
+  <!--最新评论-->
+  {{@v.productComment}}
+  {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src=lib/bootstrap/js/bootstrap.min.js></script>
+<script src="js/common.js"></script>
+<script src="js/discount.js"></script>
+</body>
+</html>

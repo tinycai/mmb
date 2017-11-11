@@ -1,0 +1,360 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.28rem;
+  font-family: 'Microsoft YaHei', sans-seri;
+  background-color: #f1f1f1;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 21.33px;
+  }
+}
+@media (min-width: 380px) {
+  html {
+    font-size: 25.33px;
+  }
+}
+@media (min-width: 460px) {
+  html {
+    font-size: 30.67px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 500px) {
+  html {
+    font-size: 33.33px;
+  }
+}
+@media (min-width: 520px) {
+  html {
+    font-size: 34.67px;
+  }
+}
+@media (min-width: 620px) {
+  html {
+    font-size: 41.33px;
+  }
+}
+@media (min-width: 680px) {
+  html {
+    font-size: 45.33px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+html,
+body {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.mmb_container {
+  max-width: 750px;
+  min-width: 320px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.mmb_header {
+  width: 100%;
+  height: 1rem;
+  background-color: #ff9000;
+}
+.header_left {
+  width: 4rem;
+  float: left;
+  padding: 0.26rem;
+}
+.header_left img {
+  width: 100%;
+  display: block;
+}
+.header_right {
+  width: 1.2rem;
+  float: right;
+  padding: 0.1rem 0.26rem 0.2rem 0.2rem;
+}
+.header_right img {
+  width: 100%;
+  display: block;
+}
+.mmb_search {
+  height: 1rem;
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  padding: 0.1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.mmb_search .search_txt {
+  padding: 0.4rem;
+  width: 80%;
+  height: 0.4rem;
+  border: 1px solid #eee;
+  float: left;
+  border-radius: 0.5rem;
+  font-size: 0.32rem;
+  background-color: #f1f1f1;
+  line-height: 0.6rem;
+  margin-right: 0.4rem;
+}
+.mmb_search .search_btn {
+  border: 1px solid #ff9000;
+  position: absolute;
+  width: 10%;
+  border-radius: 0.3rem;
+  height: 0.86rem;
+  float: right;
+  background-color: #ff9000;
+  margin-left: 0.7rem;
+  color: #fff;
+  font-size: 0.32rem;
+}
+.mmb_foot {
+  width: 100%;
+  background-color: #efefef;
+  margin-top: 0.2rem;
+}
+.mmb_bottom_nav {
+  background: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  clear: both;
+}
+.mmb_bottom_nav a {
+  box-sizing: border-box;
+  float: left;
+  font-size: 0.28rem;
+  border-right: 1px solid #c4c4c4;
+  text-align: center;
+  width: 30%;
+}
+.mmb_bottom_nav a:last-child {
+  border-right: none;
+  width: 33.33%;
+}
+.mmb_bottom_word {
+  margin-top: 0.2rem;
+  text-align: center;
+}
+.mmb_bottom_word p {
+  font-size: 0.24rem;
+  text-align: center;
+}
+.search_txt {
+  margin-bottom: 0!important;
+}
+.mmb_foot {
+  position: fixed;
+  bottom: 0;
+}
+ul li {
+  list-style: none;
+}
+.brake {
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(#fff, #ebebeb);
+  padding: 0.2rem;
+}
+.brake li {
+  float: left;
+  font-size: 0.36rem;
+  line-height: 0.7rem;
+  letter-spacing: 0.04rem;
+}
+.brand {
+  margin-bottom: 150px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+.hot {
+  margin: 0.2rem;
+  margin-right: 0.2rem;
+  padding: 0.2rem;
+  height: 1.2rem;
+  border: 1px solid #ccc;
+  background-color: #faebcc;
+  -webkit-border-radius: 5rem 50px;
+  -moz-border-radius: 5rem 50px;
+  border-radius: 0.1rem;
+  font-weight: 700;
+}
+.hot p {
+  font-size: 0.4rem;
+  letter-spacing: 0.04rem;
+  line-height: 0.7rem;
+}
+.box {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  background-color: #faebcc;
+  -webkit-border-radius: 5rem 50px;
+  -moz-border-radius: 5rem 50px;
+  border-radius: 0.1rem;
+  font-weight: 700;
+}
+.box li {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.box img {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  float: left;
+  margin-right: 0.4rem;
+}
+.box .info {
+  overflow: hidden;
+  padding-top: 0.2rem;
+}
+.box .info .title {
+  font-size: 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+  color: #000;
+}
+.box .second_row {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.box .second_row .price {
+  color: #ff9000;
+  font-size: 0.44rem;
+}
+.box .second_row .star {
+  position: absolute;
+  right: 0.4rem;
+  color: #ff802d;
+  font-size: 0.36rem;
+}
+.hide {
+  display: none;
+}
+.sec_box {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  background-color: #faebcc;
+  -webkit-border-radius: 5rem 50px;
+  -moz-border-radius: 5rem 50px;
+  border-radius: 0.1rem;
+  font-weight: 700;
+}
+.sec_box li {
+  overflow: hidden;
+  position: relative;
+}
+.sec_box img {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  float: left;
+  margin-right: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+.sec_box .title_sec {
+  padding-top: 1.2rem;
+  font-size: 0.4rem;
+}
+.sec_box .sj {
+  position: absolute;
+  top: 3.96rem;
+  left: 0.9rem;
+  font-size: 0.36rem;
+  color: #ccc;
+}
+.sec_box .sec_info {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 0.2rem;
+  width: 100%;
+  height: 6rem;
+  bottom: 0;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.sec_box .sec_info .username {
+  margin-left: 0.4rem;
+}
+.sec_box .sec_info .star_s {
+  color: #ff802d;
+  font-size: 0.36rem;
+  margin-left: 0.4rem;
+}
+.sec_box .sec_info .date {
+  float: right;
+  font-size: 0.32rem;
+}
+.sec_box .sec_info .article {
+  padding: 0.2rem;
+}

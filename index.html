@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>主页</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="mmb_container">
+  <!--头部开始-->
+  <div class="mmb_header">
+    <div class="header_left">
+      <a href="#">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="header_right">
+      <a href="#">
+        <img src="images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  
+  
+  <!--搜索框开始-->
+  <div class="mmb_search clearfix">
+    <input class="search_txt" type="text" placeholder="请输入你想比价的商品">
+    <button class="search_btn">搜索</button>
+  </div>
+  
+  <div class="mmb_content">
+    <!--导航栏开始-->
+    <div class="mmb_nav">
+      <ul class="clearfix nav">
+        <!--待填-->
+      </ul>
+    </div>
+    
+    <!--商品展示开始-->
+    <div class="mmb_pro_title clearfix">
+      <h4>超值折扣推荐</h4>
+      <span class="mui-icon mui-icon-arrowright"></span>
+    </div>
+    
+    <!--商品内容开始-->
+    <div class="mmb_pro_content">
+      
+      <ul class="pro_pic">
+        <!--待填-->
+      </ul>
+    
+    </div>
+    
+    <!--更多优惠信息开始-->
+    <div class="mmb_more">
+      <a href="#" class="mui-btn mui-btn-outlined">更多优惠信息>></a>
+    </div>
+    
+    <!--品牌排行-->
+    <div class="mmb_pro_title clearfix">
+      <h4>品牌排行</h4>
+      <span class="mui-icon mui-icon-arrowright"></span>
+    </div>
+  
+  </div>
+  
+  <div class="mmb_foot">
+    <!--底部导航开始-->
+    <div class="mmb_bottom_nav">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="back">返回顶部</a>
+    </div>
+    
+    <!--底部开始-->
+    <div class="mmb_bottom_word">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  
+  </div>
+</div>
+
+<!--模板引擎开始-->
+<!--图标的渲染-->
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  
+  <li class="{{i<=7?'':'hide '}}" data-index="{{i==7?'more':''}}">
+    <a href="{{v.titlehref}}">
+      <img src="{{v.src}}" alt="">
+      <p>{{v.name}}</p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--商品的渲染-->
+<script type="text/html" id="tmp2">
+  {{each result v i}}
+  <li>
+    <a href="javascript:;" class="">
+      <div class="pro_content">
+        {{v.productName}}
+        <span class="red">{{v.productPinkage}}</span>
+        <p class="pro_content_bottom clearfix">
+          <span>{{v.productFrom}}</span>|
+          <span>{{v.productTime}}</span>
+          <% var num=v.productComCount.substr(1,1)%>
+          <span class="mui-icon mui-icon-chat">{{num}}</span>
+        </p>
+      
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

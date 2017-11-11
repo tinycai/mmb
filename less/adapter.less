@@ -1,0 +1,19 @@
+@charset "UTF-8";
+//适配不同的屏幕
+.adapter(@deviceWidth){
+  @media (min-width:@deviceWidth){
+    html{
+      font-size:round(@deviceWidth/15,2);
+    }
+  }
+}
+.adapter(320px);
+.adapter(380px);
+.adapter(460px);
+.adapter(480px);
+.adapter(500px);
+.adapter(520px);
+.adapter(620px);
+.adapter(680px);
+.adapter(720px);
+.adapter(750px);

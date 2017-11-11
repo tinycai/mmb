@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.28rem;
+  font-family: 'Microsoft YaHei', sans-seri;
+  background-color: #f1f1f1;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.left {
+  color: #fff;
+  font-size: 0.32rem;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 0.18rem;
+  transform: translate(-50%);
+  color: #fff;
+}
+.mmb_pro_content {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #fff;
+}
+.mmb_pro_content li {
+  height: 4rem;
+  border-bottom: 1px solid #ccc;
+  padding-top: 0.4rem;
+}
+.mmb_pro_content img {
+  width: 2.4rem;
+  height: 2.4rem;
+  float: left;
+  margin-right: 0.6rem;
+}
+.mmb_pro_content .pro_content {
+  overflow: hidden;
+}
+.mmb_pro_content .pro_content .red {
+  color: #ff9000;
+}
+.mmb_pro_content .pro_content .pro_content_bottom {
+  margin-top: 1.4rem;
+}
+.mmb_pro_content .pro_content .pro_content_bottom .mui-icon-chat {
+  font-size: 0.28rem;
+  float: right;
+  margin-right: 0.4rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+}
+.page {
+  width: 100%;
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  background-color: #fff;
+}
+.page span {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.page span a {
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+  font-size: 0.28rem;
+  line-height: 0.64rem;
+  padding: 0.16rem 0.4rem;
+  border-radius: 0.1rem;
+  text-decoration: none !important;
+  color: #000;
+}
+.page span #selectPage {
+  line-height: 15px;
+  padding-left: 70px;
+  padding-top: 6px;
+}
